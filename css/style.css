@@ -1,0 +1,332 @@
+
+/*======================================
+  Project:   Animation
+  Build:     Bootstrap 4.0.0
+  Author:    Pronoy Saha
+  Version:   1.0 
+==================================*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../images/bg.jpg);
+}
+/*down arrow start*/
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width:100%;
+  height: 10%;
+  /*background: #e80909;*/
+}
+
+.Scroll-down {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #ffff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+  font-size: 14px;
+  color: #ffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}
+/*down arrow end*/
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+/*==============================
+        common css end
+================================*/
+
+/*Header Start*/
+header{
+    background: #F44336;
+    height: 80px;
+}
+
+marquee{
+    color: white;
+    font-size: 40px;
+    padding-top: 8px;
+}
+/*Header End*/
+
+ #one{
+    background: #0092EF;
+    height: 750px;
+    color: white;
+} 
+
+#one .top-text{
+    padding-top: 200px;
+}
+
+#one .top-text h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+#one .top-text h2{
+    font-size: 55px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+#one .top-text h3{
+    font-size: 40px;
+    font-weight: 800;
+    padding-top: 20px;
+}
+/*======================
+      One Sec End
+========================*/
+
+#two{
+    background: #A900EF;
+    height: 750px;
+
+}
+
+#two .con-left{
+    /*background: #00EFE7;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+
+#two .con-right{
+    /*background: #00EFE7;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+/*======================
+      Two Sec End
+========================*/
+
+#three{
+    background: #EF2D00;
+    height: 750px;
+
+}
+
+#three .con-left{
+    /*background: #FBF9F9;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+#three .con-right{
+    /*background: #FBF9F9;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+/*======================
+      Three Sec End
+========================*/
+
+#four{
+    background: #EFAE00;
+    height: 750px;
+
+}
+
+#four .con-left{
+    /*background: #795548;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+#four .con-right{
+    /*background: #795548;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+/*======================
+      Four Sec End
+========================*/
+
+#five{
+    background: #EF0098;
+    height: 750px;
+
+}
+
+#five .con-left{
+    /*background: #607D8B;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+
+#five .con-right{
+    /*background: #607D8B;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+
+/*======================
+      Five Sec End
+========================*/
+
+
+#six{
+    background: #66BA0B;
+    height: 750px;
+
+}
+
+#six .con-left{
+    /*background: #F44336;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+#six .con-right{
+    /*background: #F44336;*/
+    width: 200px;
+    height: 400px;
+    margin-top: 180px;
+}
+/*======================
+      Six Sec End
+========================*/
+
+footer{
+    background: #607D8B;
+    height: 70px;
+}
+
+.down-t{
+    color: #fff;
+    padding-top: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+/*======================
+      Footer End
+========================*/
+
+.top_to_button {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background: #ffff none repeat scroll 0 0;
+    color: #000;
+    text-align: center;
+    line-height: 36px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 99999999;
+    transition: all .3s ease
+}
+
+.scrollup i {
+    transition: all .3s ease
+}
+
+.top_to_button:hover {
+    box-shadow: 0px 15px 15px 0 rgba(0, 0, 0, .2);
+    transform: translateY(-10px);
+}
